@@ -10,7 +10,11 @@ import Hosts from './components/admin/hosts/Hosts';
 import AddHost from './components/admin/hosts/AddHost';
 import Appointments from './components/admin/appointments/Appointments';
 import AddAppointment from './components/admin/appointments/AddAppointment';
+import Login from './components/visitor/Login';
 
+// import './assets/loginImg.jpg';
+
+ 
 export default function App() {
   return (
     <div>
@@ -37,8 +41,10 @@ export default function App() {
         {/* <Route path="visitors/edit/:id" element={<EditVisitor />}></Route>
         <Route path="visitors/details/:id" element={<VisitorDetails />}></Route> */}
 
-      </Routes>
+        {/* Visitor module - login page */}
+        <Route path="visitor/login/" element={<Login />}></Route>
 
+      </Routes>
     </div>
   );
   
