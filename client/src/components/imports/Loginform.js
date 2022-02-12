@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function login() {
+export default function Loginform() {
   return (
                 <div className='col-sm-7 bg-color align-self-center'>
                     {/* <login/> */}

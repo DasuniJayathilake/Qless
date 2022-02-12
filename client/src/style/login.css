@@ -127,6 +127,7 @@
 
 #login .form-section .login-inner-form .form-box .icon.email::before {
   font-family: "Font Awesome 5 Free";
+  font-weight: bold;
   content: "\f0e0";
 }
 
@@ -134,6 +135,24 @@
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   content: "\f023";
+}
+
+#login .form-section .login-inner-form .form-box .icon.user::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f007";
+}
+
+#login .form-section .login-inner-form .form-box .icon.contact::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f023";
+}
+
+#login .form-section .login-inner-form .form-box .icon.nic::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f2c2";
 }
 
 #login .form-section .login-inner-form .form-box > .input-text {
