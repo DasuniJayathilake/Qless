@@ -40,6 +40,11 @@
                     font-size: 22px;
                     font-weight: bold;
                     color: #505050;
+
+                    >img{
+                        width: 50%;
+                        height: 50%;
+                    }
                 }
             }
 
@@ -67,10 +72,35 @@
                     border-radius: 50px 0 0 50px;
                     margin-bottom: 15px;
                     border: none;
+                    font-weight: bolder;
+                    transition: all 0.5s;
+
+                    >span{
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.1s;
+                      }
+
+                    >span::after{
+                        content: '\00bb';
+                        position: absolute;
+                        opacity: 0;
+                        top: 0;
+                        right: -20px;
+                        transition: 0.5s;
+                    }
 
                     &focus{
                         outline: none;
                         box-shadow: none;
+                    }
+
+                    &:hover{
+                        background:  #d61d42;
+                        color: #fff;
+                        box-shadow: 25px rgba(255, 255, 255, 0.8);
+                        padding-right: 25px;
                     }
                 }
             }

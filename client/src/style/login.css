@@ -58,6 +58,11 @@
   color: #505050;
 }
 
+#login .login-box .info > .logo > .nav-brand > img {
+  width: 50%;
+  height: 50%;
+}
+
 #login .login-box .info > .btn-section {
   position: absolute;
   top: 40%;
@@ -83,12 +88,41 @@
   border-radius: 50px 0 0 50px;
   margin-bottom: 15px;
   border: none;
+  font-weight: bolder;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#login .login-box .info > .btn-section > .btn-primary > span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#login .login-box .info > .btn-section > .btn-primary > span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #login .login-box .info > .btn-section > .btn-primaryfocus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+#login .login-box .info > .btn-section > .btn-primary:hover {
+  background: #d61d42;
+  color: #fff;
+  -webkit-box-shadow: 25px rgba(255, 255, 255, 0.8);
+          box-shadow: 25px rgba(255, 255, 255, 0.8);
+  padding-right: 25px;
 }
 
 #login .form-section {

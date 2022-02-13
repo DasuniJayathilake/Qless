@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+//create express instance
 const app = express();
+// app.use(express.json())
 
 //import routes
 const visitorsRoutes = require('./routes/visitors');

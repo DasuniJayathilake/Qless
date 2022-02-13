@@ -4,6 +4,7 @@ import Loginform from '../imports/Loginform';
 import '../../style/login.css';
 import img from '../../assets/loginImg.jpg';
 import Registerform from '../imports/Registerform';
+import logo from '../../assets/logo.png'
 
 console.log(img);
 
@@ -18,20 +19,46 @@ export default function Login() {
                 <div className='col-sm-5 bg-img align-self-center'>
                     <div className='info'>
                         <div className='logo clearfix'>
-                            <a href='#' className='nav-brand'>Logo</a>
+                            <a href='#' className='nav-brand'><img src={logo} /></a>
                         </div>
                         <div className='btn-section clearfix'>
-                            <button className='nav-link link-btn btn-primary default-bg'>Login</button>
-                            <button className='nav-link link-btn btn-primary default-bg'>Register</button>
+                            {/* <button href={'/visitor/import/loginform'} className='nav-link link-btn btn-primary default-bg'>Login</button>
+                            <button href={'/visitor/import/registerform'} className='nav-link link-btn btn-primary default-bg'>Register</button> */}
+
+                            <a href={'/visitor/login'} className='nav-link link-btn btn-primary default-bg'><span>Login</span></a>
+                            <a href={'/visitor/register'} className='nav-link link-btn btn-primary default-bg'><span>Register</span></a>
                         </div>
                     </div>
                 </div>
 
                 {/* base-login.jsx */}
 
-                {/* Loginform component */}
-                {/* <Loginform /> */}
-                <Registerform />
+                <div className='col-sm-7 bg-color align-self-center'>
+                    <div className='form-section'>
+                        <div className='title'>
+                            <h3>Sign into your account</h3>
+                        </div>
+                        <div className='login-inner-form'>
+                            <form method='POST'>
+                                
+                                <div className='form-group form-box'>
+                                    <input type="text" id="email" className='input-text' placeholder='Email Address'/>
+                                    <i className='icon email'></i>
+                                </div>
+
+                                <div className='form-group form-box'>
+                                    <input type="text" id="password" className='input-text' placeholder='Password'/>
+                                    <i className='icon lock'></i>
+                                </div>
+
+                                <div className='form-group'>
+                                    <button className='btn primary-btn'>Login</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>

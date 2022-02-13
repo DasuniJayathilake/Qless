@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Navbar from '../Navbar';
 
 
 export default class Visitors extends Component {

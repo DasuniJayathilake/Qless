@@ -1,7 +1,6 @@
 const express = require('express');
 const visitors = require('../models/visitors');
 
-
 const router = express.Router();
 
 //save visitors

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import AddVisitor from './components/admin/visitors/AddVisitor';
 import EditVisitor from './components/admin/visitors/EditVisitor';
-// import Navbar from './components/admin/Navbar'
+import Navbar from './components/admin/Navbar'
 import VisitorDetails from './components/admin/visitors/VisitorDetails';
 import Visitors from './components/admin/visitors/Visitors';
 import DashBoard from './components/admin/dashboard/DashBoard';
@@ -19,6 +19,8 @@ import Registerform from './components/imports/Registerform';
 export default function App() {
   return (
     <div>
+
+      <Navbar />
 
       <Routes>
 
