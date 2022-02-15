@@ -12,7 +12,7 @@ export default function Register() {
             <div className='col-sm-5 bg-img align-self-center'>
                 <div className='info'>
                     <div className='logo clearfix'>
-                        <a href='#' className='nav-brand'><img src={logo} /></a>
+                        <a href='#' className='nav-brand'><img src={logo} alt="logo" /></a>
                     </div>
                     <div className='btn-section clearfix'>
                         {/* <button className='nav-link link-btn btn-primary default-bg'>Login</button>

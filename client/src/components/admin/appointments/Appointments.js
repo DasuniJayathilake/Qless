@@ -39,12 +39,12 @@ onDelete = (id) =>{
 
 filterData(appointments, searchKey){
 
-  const result = appointments.filter((appointments) => {
+  const result = appointments.filter((appointments) => 
     appointments.VisitorName.toLowerCase().includes(searchKey) ||
     appointments.HostName.toLowerCase().includes(searchKey) ||
     appointments.Purpose.toLowerCase().includes(searchKey) ||
     appointments.Date.toLowerCase().includes(searchKey) 
-  })
+  )
 
   this.setState({appointments: result})
 }
@@ -109,7 +109,7 @@ handleSearchArea = (e) => {
                     <i className="fas fa-edit"></i>&nbsp;Edit
                   </a>
                   &nbsp;
-                  <a className="btn btn-danger" href="#" onClick={() => this.onDelete(appointments._id)}>
+                  <a className="btn btn-danger" onClick={() => this.onDelete(appointments._id)}>
                     <i className="far fa-trash-alt"></i>&nbsp;Delete
                   </a>
                 </td>

@@ -39,12 +39,13 @@ onDelete = (id) =>{
 
 filterData(hosts, searchKey){
 
-  const result = hosts.filter((hosts) => {
+  const result = hosts.filter((hosts) => 
     hosts.Name.toLowerCase().includes(searchKey) ||
+    hosts.Department.toLowerCase().includes(searchKey) ||
     hosts.ContactNo.toLowerCase().includes(searchKey) ||
     hosts.Email.toLowerCase().includes(searchKey) ||
     hosts.NIC.toLowerCase().includes(searchKey) 
-  })
+  )
 
   this.setState({hosts: result})
 }

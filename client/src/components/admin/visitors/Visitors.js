@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navbar from '../Navbar';
 
 
+
 export default class Visitors extends Component {
 constructor(props){
   super(props);
@@ -40,17 +41,19 @@ onDelete = (id) =>{
 
 filterData(visitors, searchKey){
 
-  const result = visitors.filter((visitors) => {
+  const result = visitors.filter((visitors) => 
     visitors.Name.toLowerCase().includes(searchKey) ||
     visitors.ContactNo.toLowerCase().includes(searchKey) ||
     visitors.Email.toLowerCase().includes(searchKey) ||
     visitors.NIC.toLowerCase().includes(searchKey) 
-  })
+  )
+  
 
   this.setState({visitors: result})
 }
 
 handleSearchArea = (e) => {
+  // console.log(e.currentTarget.value);
   const searchKey = e.currentTarget.value;
 
   axios.get("/visitors").then(res => {
@@ -75,9 +78,7 @@ handleSearchArea = (e) => {
             type='search'
             placeholder='Search'              
             name='searchQuery'
-            onChange={this.handleSearchArea}>
-
-            </input>
+            onChange={this.handleSearchArea}/>
           </div>
         </div>
         <table className="table table-hover" style={{marginTop:'40px'}}>

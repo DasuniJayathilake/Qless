@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router';
 
 export default class EditVisitor extends Component {
 
@@ -23,6 +24,8 @@ export default class EditVisitor extends Component {
   }
 
   onSubmit = (e) => {
+
+    const params = useParams();
 
     e.preventDefault();
     const id=this.props.match.params.id;
