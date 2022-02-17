@@ -14,7 +14,7 @@ export default function Login() {
         <div className='container'>
             <div className='row login-box'>
 
-                {/* base-login.jsx */}
+                {/* base-login */}
 
                 <div className='col-sm-5 bg-img align-self-center'>
                     <div className='info'>
@@ -31,7 +31,9 @@ export default function Login() {
                     </div>
                 </div>
 
-                {/* base-login.jsx */}
+                {/* base-login */}
+
+                {/* login */}
 
                 <div className='col-sm-7 bg-color align-self-center'>
                     <div className='form-section'>
@@ -59,6 +61,8 @@ export default function Login() {
                         </div>
                     </div>
                 </div>
+
+                {/* login */}
 
 
             </div>

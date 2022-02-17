@@ -70,7 +70,7 @@ handleSearchArea = (e) => {
         {/* <p>Visitor Details</p> */}
         <div className='row'>
           <div className='col-lg-9 mt-2 mb-2'>
-          <h4>All Visitors</h4>
+          <h1>All Visitors</h1>
           </div>
           <div className='col-lg-3 mt-2 mb-2'>
             <input

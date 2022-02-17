@@ -162,13 +162,19 @@
                 .icon.contact::before{
                     font-family: "Font Awesome 5 Free";
                     font-weight: bold;
-                    content: "\f023";
+                    content: "\f879";
                 }
 
                 .icon.nic::before{
                     font-family: "Font Awesome 5 Free";
                     font-weight: bold;
                     content: "\f2c2";
+                }
+
+                .icon.img::before{
+                    font-family: "Font Awesome 5 Free";
+                    // font-weight: bold;
+                    content: "\f03e";
                 }
 
                 // style input textbox
@@ -202,6 +208,29 @@
                     background:  #d61d42;
                 }
             }
+
+            .form-container{
+                .footer{
+                    .nextprev-btn{
+                        background: #ff214f;
+                        width: 30%;
+                        border: none;
+                        color: #fff;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                        padding: 10px 30px;
+                        cursor: pointer;
+                        height: 45px;
+                        border-radius: 50px;
+                        margin: 20px;
+        
+                        &:hover{
+                            background:  #d61d42;
+                        }
+                    }
+                }
+            }
+
+            
         }
     }
 

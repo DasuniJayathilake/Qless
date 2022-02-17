@@ -13,7 +13,8 @@ import Appointments from './components/admin/appointments/Appointments';
 import AddAppointment from './components/admin/appointments/AddAppointment';
 import Login from './components/visitor/Login';
 import Register from './components/visitor/Register';
-import { useParams } from 'react-router';
+import OtherInfo from './components/visitor/OtherInfo';
+// import { useParams } from 'react-router';
 
 // import Loginform from './components/imports/Loginform';
 // import Registerform from './components/imports/Registerform';
@@ -27,7 +28,7 @@ export default function App() {
 
       <Routes>
 
-      <Route exact path="/" element={<DashBoard />}></Route>
+        <Route exact path="/" element={<DashBoard />}></Route>
 
         {/* Admin module - Visitor part */}
         <Route path="visitors/" element={<Visitors />}></Route>
@@ -50,12 +51,13 @@ export default function App() {
         {/* Visitor module - login page */}
         <Route path="visitor/login/" element={<Login />}></Route>
         <Route path="visitor/register/" element={<Register />}></Route>
-        {/* <Route path="visitor/import/loginform" element={<Loginform />}></Route>
-        <Route path="visitor/import/registerform" element={<Registerform />}></Route> */}
+        <Route path="visitor/register/other" element={<OtherInfo />}></Route>
+
 
       </Routes>
     </div>
   );
+
   
 }
 

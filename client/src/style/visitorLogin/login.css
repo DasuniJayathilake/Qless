@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans&display=swap");
+* {
+  font-family: 'Open Sans';
+}
+
+/* login page styling */
 #login {
   min-height: 100vh;
   display: -webkit-box;
@@ -174,13 +180,18 @@
 #login .form-section .login-inner-form .form-box .icon.contact::before {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  content: "\f023";
+  content: "\f879";
 }
 
 #login .form-section .login-inner-form .form-box .icon.nic::before {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   content: "\f2c2";
+}
+
+#login .form-section .login-inner-form .form-box .icon.img::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f03e";
 }
 
 #login .form-section .login-inner-form .form-box > .input-text {
@@ -212,6 +223,24 @@
 }
 
 #login .form-section .login-inner-form .primary-btn:hover {
+  background: #d61d42;
+}
+
+#login .form-section .login-inner-form .form-container .footer .nextprev-btn {
+  background: #ff214f;
+  width: 30%;
+  border: none;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+  cursor: pointer;
+  height: 45px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+#login .form-section .login-inner-form .form-container .footer .nextprev-btn:hover {
   background: #d61d42;
 }
 /*# sourceMappingURL=login.css.map */
