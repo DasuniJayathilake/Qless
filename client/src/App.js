@@ -19,7 +19,6 @@ import OtherInfo from './components/visitor/OtherInfo';
 // import Loginform from './components/imports/Loginform';
 // import Registerform from './components/imports/Registerform';
 
- 
 export default function App() {
   return (
     <div>
@@ -52,7 +51,6 @@ export default function App() {
         <Route path="visitor/login/" element={<Login />}></Route>
         <Route path="visitor/register/" element={<Register />}></Route>
         <Route path="visitor/register/other" element={<OtherInfo />}></Route>
-
 
       </Routes>
     </div>

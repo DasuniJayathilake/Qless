@@ -1,47 +1,90 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Layout, Container, BoxUpload, ImagePreview } from "../../style/visitorLogin/addphoto";
+import FolderIcon from "../../assets/t_icon.png";
+import CloseIcon from "../../assets/CloseIcon.svg";
+
 
 export default function OtherInfo({ formData, setFormData }) {
+
+  const [image, setImage] = useState("");
+  const [isUploaded, setIsUploaded] = useState(false);
+  const [typeFile, setTypeFile] = useState("");
+
+  function handleImageChange(e) {
+    if (e.target.files && e.target.files[0]) {
+      setTypeFile(e.target.files[0].type);
+      let reader = new FileReader();
+
+      reader.onload = function (e) {
+        setImage(e.target.result);
+        setIsUploaded(true);
+      };
+
+      reader.readAsDataURL(e.target.files[0]);
+    }
+  }
+
   return (
     <div className="other-info-container">
 
-      <div className="form-group form-box">
-        <input
-          type="text"
-          className="input-text"
-          placeholder="Gender"
-          value={formData.gender}
-          onChange={(e) => {
-            setFormData({ ...formData, gender: e.target.value });
-          }}
-        />
-        <i className='icon user'></i>
-      </div>
+      <Layout>
+        <BoxUpload>
+          <div className="image-upload">
+            {!isUploaded ? (
+              <>
+                <label htmlFor="upload-input">
+                  <img
+                    src={FolderIcon}
+                    draggable={"false"}
+                    alt="placeholder"
+                    style={{ width: 100, height: 100 }}
+                  />
+                  <p style={{ color: "#444" }}>Upload Your Image</p>
+                </label>
 
-      <div className="form-group form-box">
-        <input
-          type="text"
-          className="input-text"
-          placeholder="NIC"
-          value={formData.nic}
-          onChange={(e) => {
-            setFormData({ ...formData, nic: e.target.value });
-          }}
-        />
-        <i className='icon nic'></i>
-      </div>
+                <input
+                  id="upload-input"
+                  type="file"
+                  accept=".jpg,.jpeg,.gif,.png,.mov,.mp4"
+                  onChange={handleImageChange}
+                />
+              </>
+            ) : (
+              <ImagePreview>
+                <img
+                  className="close-icon"
+                  src={CloseIcon}
+                  alt="CloseIcon"
+                  onClick={() => {
+                    setIsUploaded(false);
+                    setImage(null);
+                  }}
+                />
+                {typeFile.includes("video") ? (
+                  <video
+                    id="uploaded-image"
+                    src={image}
+                    draggable={false}
+                    controls
+                    autoPlay
+                    alt="uploaded-img"
+                  />
+                ) : (
+                  <img
+                    id="uploaded-image"
+                    src={image}
+                    draggable={false}
+                    alt="uploaded-img"
+                  />
+                )}
+              </ImagePreview>
+            )}
+          </div>
+        </BoxUpload>
 
-      <div className="form-group form-box">
-        <input
-          type="text"
-          className="input-text"
-          placeholder="Upload a Photo of You..."
-          value={formData.photo}
-          onChange={(e) => {
-            setFormData({ ...formData, photo: e.target.value });
-          }}
-        />
-        <i className='icon img'></i>
-      </div>
+        {/* {isUploaded ? <p>Type is {typeFile}</p> : null} */}
+      </Layout>
+
       
     </div>
   )

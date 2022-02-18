@@ -43,6 +43,19 @@ export default function PersonalInfo({ formData, setFormData }) {
         <i className='icon contact'></i>
       </div>
 
+      <div className="form-group form-box">
+        <input
+          type="text"
+          className="input-text"
+          placeholder="NIC"
+          value={formData.nic}
+          onChange={(e) => {
+            setFormData({ ...formData, nic: e.target.value });
+          }}
+        />
+        <i className='icon nic'></i>
+      </div>
+
     </div>
   )
 }
