@@ -1,9 +1,6 @@
-
 import React from 'react';
-import Loginform from '../imports/Loginform';
 import '../../style/visitorLogin/login.css';
 import img from '../../assets/loginImg.jpg';
-import Registerform from '../imports/Registerform';
 import logo from '../../assets/logo.png'
 
 console.log(img);
