@@ -8,11 +8,9 @@ export default function Footer() {
         <section id="footer">
 
             <div class="share">
-                <a href="#" class="media"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="media"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="media"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="media"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#" class="media"><i class="fab fa-linkedin-in"></i></a>
+                <a href={'contact'} class="media"><i class="fa-solid fa-envelope"></i></a>
+                <a href={'contact'}  class="media"><i class="fa-solid fa-phone"></i></a>
+                <a href={'contact'}  class="media"><i class="fa-solid fa-location-dot"></i></a>
             </div>
             <h1 class="credit"> Created by <span> Dasuni Jayathilake </span> | All rights reserved! </h1>
         </section>

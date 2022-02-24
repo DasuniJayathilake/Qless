@@ -15,6 +15,7 @@ import Login from './components/visitor/Login';
 import Register from './components/visitor/Register';
 import OtherInfo from './components/visitor/OtherInfo';
 import Home from './components/visitor/visitorHome/Home';
+import Contact from './components/visitor/visitorContact/Contact';
 // import { useParams } from 'react-router';
 
 // import Loginform from './components/imports/Loginform';
@@ -51,10 +52,14 @@ export default function App() {
         {/* Visitor module - login page */}
         <Route path="visitor/login/" element={<Login />}></Route>
         <Route path="visitor/register/" element={<Register />}></Route>
-        <Route path="visitor/register/other" element={<OtherInfo />}></Route>
+        {/* <Route path="visitor/register/other" element={<OtherInfo />}></Route> */}
 
         {/* visitor module - home page */}
         <Route path="visitor/home" element={<Home />}></Route>
+
+        {/* visitor module - contactpage */}
+        <Route path="visitor/contact" element={<Contact />}></Route>
+
 
       </Routes>
     </div>

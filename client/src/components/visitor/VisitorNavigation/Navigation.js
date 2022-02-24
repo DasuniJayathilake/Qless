@@ -14,11 +14,11 @@ export default function Navigation() {
             <div id="menu-bar" class="fas fa-bars"></div>
 
             <nav class="navbar">
-                <a href="#home">Home</a>
+                <a href={'home'}>Home</a>
                 <a href="">Host Schedule</a>
                 <a href="">Appointments</a>
                 <a href="">My profile</a>
-                <a href="">Contact Us</a>
+                <a href={'contact'}>Contact Us</a>
             </nav>
 
         </header>

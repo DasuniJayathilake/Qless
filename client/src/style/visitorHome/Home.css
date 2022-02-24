@@ -319,6 +319,8 @@ header .navbar a:hover{
   #footer{
     background:#000;
     text-align: center;
+    padding: 1rem;
+    margin-top: 0;
   }
   
   #footer .share{
@@ -342,7 +344,7 @@ header .navbar a:hover{
   #footer .share .media i{
     font-size: 1.5rem;
     color: var(--red);
-    padding: 0;
+    padding: 0 10px;
   }
   
   #footer .share .media i:hover{
