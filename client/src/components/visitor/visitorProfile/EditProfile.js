@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from '../visitorFooter/Footer';
 import Navigation from '../VisitorNavigation/Navigation';
-import { Layout, Container, BoxUpload, ImagePreview } from "../../../style/visitorLogin/addphoto";
+import { Layout, Container, BoxUpload, ImagePreview } from "../../../style/visitorProfile/addphoto";
 import FolderIcon from "../../../assets/t_icon.png";
 import CloseIcon from "../../../assets/CloseIcon.svg";
 
@@ -39,7 +39,7 @@ export default function({ formData, setFormData }) {
                         <div className='info'>
                         <Layout>
                             <BoxUpload>
-                            <div className="image-upload">
+                            <div className="image-upload" id="edit-profile">
                                 {!isUploaded ? (
                                 <>
                                     <label htmlFor="upload-input">
@@ -86,6 +86,7 @@ export default function({ formData, setFormData }) {
                                         draggable={false}
                                         alt="uploaded-img"
                                     />
+                                    
                                     )}
                                 </ImagePreview>
                                 )}
@@ -119,7 +120,7 @@ export default function({ formData, setFormData }) {
                                     </div>
 
                                     <div className='form-group form-box'>
-                                        <input type="text" id="email" className='input-text' placeholder='Email Address'/>
+                                        <input type="text" id="email" className='input-text email-text' placeholder='Email Address'/>
                                         <i className='icon email'></i>
                                     </div>
 

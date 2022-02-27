@@ -35,7 +35,7 @@ export default function Profile() {
                     <div className='col-sm-7 bg-color'>
                         <div className='form-section'>
                             <div className='title'>
-                                <h3>Your profile</h3>
+                                <h3>my profile</h3>
                             </div>
 
                             <div className='profile-details'>
