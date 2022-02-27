@@ -20,13 +20,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 { 
-    color: #7c795d; 
-    font-family: 'Trocchi', serif; 
-    font-size: 45px; 
-    font-weight: normal; 
-    line-height: 48px; 
-    margin: 0; 
-    text-align: center;
+.email-text{
+    text-transform: lowercase;
 }
 

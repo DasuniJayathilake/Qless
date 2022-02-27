@@ -47,7 +47,7 @@ export default function PersonalInfo({ formData, setFormData }) {
         <input
           type="text"
           className="input-text"
-          placeholder="NIC"
+          placeholder="NIC Number"
           value={formData.nic}
           onChange={(e) => {
             setFormData({ ...formData, nic: e.target.value });

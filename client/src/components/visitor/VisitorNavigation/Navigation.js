@@ -17,7 +17,7 @@ export default function Navigation() {
                 <a href={'home'}>Home</a>
                 <a href="">Host Schedule</a>
                 <a href="">Appointments</a>
-                <a href="">My profile</a>
+                <a href={'profile'}>My profile</a>
                 <a href={'contact'}>Contact Us</a>
             </nav>
 

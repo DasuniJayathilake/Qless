@@ -16,6 +16,8 @@ import Register from './components/visitor/Register';
 import OtherInfo from './components/visitor/OtherInfo';
 import Home from './components/visitor/visitorHome/Home';
 import Contact from './components/visitor/visitorContact/Contact';
+import Profile from './components/visitor/visitorProfile/Profile';
+import EditProfile from './components/visitor/visitorProfile/EditProfile';
 // import { useParams } from 'react-router';
 
 // import Loginform from './components/imports/Loginform';
@@ -59,6 +61,10 @@ export default function App() {
 
         {/* visitor module - contactpage */}
         <Route path="visitor/contact" element={<Contact />}></Route>
+
+        {/* visitor module - profile */}
+        <Route path="visitor/profile" element={<Profile />}></Route>
+        <Route path="visitor/editprofile" element={<EditProfile />}></Route>
 
 
       </Routes>

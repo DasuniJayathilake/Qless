@@ -59,7 +59,7 @@ export default function Contact() {
                     </div>
                     <div className="information">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>example@gmail.com</p>
+                        <p className='email-text'>example@gmail.com</p>
                     </div>
                     <div class="information">
                         <i class="fa-solid fa-phone"></i>
