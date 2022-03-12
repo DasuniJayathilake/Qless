@@ -122,7 +122,7 @@ export default class dashboard extends Component {
               <div class="col-div-4">
                 <div class="dash-box-4">
                 <div class="dash-content-box">
-                  <p>Total Sale <span>See All</span></p>
+                  <p>Total Appontments <span>See All</span></p>
 
                   <div class="circle-wrap">
                 <div class="circle">

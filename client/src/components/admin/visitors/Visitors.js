@@ -69,21 +69,7 @@ handleSearchArea = (e) => {
         <Navi />
 
         <div id='main'>
-          
-          {/* <div className='row'>
-            <div className='col-lg-9 mt-2 mb-2'>
-            <h1>All Visitors</h1>
-            </div>
-            <div className='col-lg-3 mt-2 mb-2'>
-              <input
-              className='form-control'
-              type='search'
-              placeholder='Search'              
-              name='searchQuery'
-              onChange={this.handleSearchArea}/>
-            </div>
-          </div> */}
-
+         
               <div class="head"> 
                 <div class="col-div-6">
                   <span class="nav"  >☰ Visitors</span>
@@ -111,7 +97,7 @@ handleSearchArea = (e) => {
           
           <div className='dash-box-details'>
             <div className='dash-content-box'>
-              <p>All Visitor details</p>
+              <p>All Visitor Details</p>
               <table className="table detail-table" style={{marginTop:'40px'}}>
                 <thead>
                   <tr>
