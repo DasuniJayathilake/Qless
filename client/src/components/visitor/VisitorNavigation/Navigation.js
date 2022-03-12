@@ -15,8 +15,7 @@ export default function Navigation() {
 
             <nav class="navbar">
                 <a href={'home'}>Home</a>
-                <a href="">Host Schedule</a>
-                <a href="">Appointments</a>
+                <a href={'appointments'}>Appointments</a>
                 <a href={'profile'}>My profile</a>
                 <a href={'contact'}>Contact Us</a>
             </nav>

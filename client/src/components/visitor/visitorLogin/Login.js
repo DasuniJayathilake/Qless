@@ -1,7 +1,8 @@
 import React from 'react';
-import '../../style/visitorLogin/login.css';
-import img from '../../assets/loginImg.jpg';
-import logo from '../../assets/logo.png'
+
+import '../../../style/visitorLogin/login.css';
+import img from '../../../assets/loginImg.jpg';
+import logo from '../../../assets/logo.png'
 
 console.log(img);
 

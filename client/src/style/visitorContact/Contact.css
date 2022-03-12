@@ -118,7 +118,7 @@ section{
     transform: translateY(0);
   }
   
-  .btn {
+  .btn-send {
     padding: 0.6rem 1.3rem;
     background-color: #fff;
     border: 2px solid #fafafa;
@@ -132,7 +132,7 @@ section{
     margin: 0;
   }
   
-  .btn:hover {
+  .btn-send:hover {
     background-color: transparent;
     color: #fff;
   }

@@ -20,7 +20,7 @@ export default function Home() {
             <div className="content">
                 <h3>Meet Your <span id='host'>Service Provider...</span></h3>
                 <p>We bring it super faster to meet your service providers in a most secure way. You don't have to worry about the waste of time anymore. Simply save a time slot for you! </p>
-                <a href="#" className="btn" id='started'><span>Appoint Here</span></a>
+                <a href={'appointments'} className="btn" id='started'><span>Appoint Here</span></a>
             </div>
 
             <div className="image">
@@ -62,7 +62,7 @@ export default function Home() {
 
         <Footer />
 
-        <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+        {/* <a href={''} className="fas fa-angle-up" id="scroll-top"></a> */}
 
     </div>
 

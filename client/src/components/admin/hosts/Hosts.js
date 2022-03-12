@@ -126,7 +126,9 @@ handleSearchArea = (e) => {
         </table>
 
         <button className='btn btn-success'>
-        <a href={`hosts/add`} style={{textDecoration:'none', color:'white'}}>Add New Hosts</a>
+        <a href={`hosts/add`} style={{textDecoration:'none', color:'white'}}>
+          <i class="fa-solid fa-user-plus"></i>&nbsp;Add New
+        </a>
         </button>
 
       </div>

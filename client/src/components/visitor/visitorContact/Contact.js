@@ -67,24 +67,6 @@ export default function Contact() {
                     </div>
                 </div>
 
-                {/* <div className="social-media">
-                    <p>Connect with us :</p>
-                    <div className="social-icons">
-                        <a href="#">
-                        <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                        <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                        <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                        <i className="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div> */}
-
             </div>
 
             <div className="contact-form">
@@ -105,7 +87,7 @@ export default function Contact() {
                         <textarea name="message" className="input" placeholder='Message...'></textarea>
                     </div>
 
-                    <input type="submit" value="Send" className="btn" />
+                    <input type="submit" value="Send" className="btn-send" />
 
                 </form>
             </div>

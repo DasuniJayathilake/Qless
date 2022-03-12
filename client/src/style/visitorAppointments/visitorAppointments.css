@@ -1,0 +1,260 @@
+#visitorAppointments {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+#visitorAppointments .default-bg {
+  background: #fff;
+  color: #505050;
+}
+
+#visitorAppointments .login-box {
+  max-width: 960px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#visitorAppointments .login-box > .bg-left {
+  padding: 0;
+  border-radius: 10px 0 0 10px;
+  background: #ff214f;
+  opacity: 1;
+}
+
+#visitorAppointments .login-box .info {
+  height: 450px;
+  position: relative;
+}
+
+#visitorAppointments .login-box .info > .profile-img {
+  width: 200px;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+#visitorAppointments .login-box .info > .profile-img > img {
+  width: 300px;
+  height: 380px;
+  border-radius: 8px;
+}
+
+#visitorAppointments .login-box .info > #user {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#visitorAppointments .login-box .info > #user:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#visitorAppointments .login-box .info > .btn-section {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  margin-bottom: 0;
+}
+
+#visitorAppointments .login-box .info > .btn-section .link-btn {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+#visitorAppointments .login-box .info > .btn-section .link-btn.active {
+  background-color: #ff214f;
+  color: #fff;
+}
+
+#visitorAppointments .login-box .info > .btn-section > .btn-primary {
+  text-align: center;
+  margin-left: 5rem;
+  line-height: 30px;
+  width: 100px;
+  text-transform: uppercase;
+  border-radius: 50px 0 0 50px;
+  margin-bottom: 15px;
+  border: none;
+  font-weight: bolder;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#visitorAppointments .login-box .info > .btn-section > .btn-primary > span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#visitorAppointments .login-box .info > .btn-section > .btn-primary > span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+}
+
+#visitorAppointments .login-box .info > .btn-section > .btn-primaryfocus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#visitorAppointments .login-box .info > .btn-section > .btn-primary:hover {
+  background: #d61d42;
+  color: #fff;
+  -webkit-box-shadow: 25px rgba(255, 255, 255, 0.8);
+          box-shadow: 25px rgba(255, 255, 255, 0.8);
+  padding-right: 25px;
+  font-size: 101%;
+}
+
+#visitorAppointments .form-section {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#visitorAppointments .form-section > .title {
+  margin: 50px 0 25px 0;
+}
+
+#visitorAppointments .form-section > .title > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #505050;
+}
+
+#visitorAppointments .form-section .login-inner-form {
+  position: relative;
+  color: #979797;
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box {
+  float: right;
+  width: 100%;
+  position: relative;
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.email::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f0e0";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.lock::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f023";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.user::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f007";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.contact::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f879";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.nic::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f2c2";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box .icon.img::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f03e";
+}
+
+#visitorAppointments .form-section .login-inner-form .form-box > .input-text {
+  font-size: 14px;
+  outline: none;
+  color: 50px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 11px 45px 11px 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#visitorAppointments .form-section .login-inner-form .primary-btn {
+  background: #ff214f;
+  width: 50%;
+  border: none;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+  cursor: pointer;
+  height: 45px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#visitorAppointments .form-section .login-inner-form .primary-btn:hover {
+  background: #d61d42;
+}
+
+#visitorAppointments .form-section .login-inner-form .form-container .footer .nextprev-btn {
+  background: #ff214f;
+  width: 30%;
+  border: none;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+  cursor: pointer;
+  height: 45px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+#visitorAppointments .form-section .login-inner-form .form-container .footer .nextprev-btn:hover {
+  background: #d61d42;
+}
+
+#visitorAppointments .form-section > .profile-details {
+  padding: 10px 0;
+}
+
+#visitorAppointments .form-section > .profile-details > dl {
+  font-size: 18px;
+  text-align: left;
+  padding: 20px;
+}
+
+#visitorAppointments .form-section > .profile-details > dl > dt, #visitorAppointments .form-section > .profile-details > dl dd {
+  padding: 10px;
+}
+/*# sourceMappingURL=visitorAppointments.css.map */

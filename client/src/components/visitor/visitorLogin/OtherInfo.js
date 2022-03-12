@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Layout, Container, BoxUpload, ImagePreview } from "../../style/visitorLogin/addphoto";
-import FolderIcon from "../../assets/t_icon.png";
-import CloseIcon from "../../assets/CloseIcon.svg";
+import { Layout, Container, BoxUpload, ImagePreview } from "../../../style/visitorLogin/addphoto";
+import FolderIcon from "../../../assets/t_icon.png";
+import CloseIcon from "../../../assets/CloseIcon.svg";
 
 
 export default function OtherInfo({ formData, setFormData }) {

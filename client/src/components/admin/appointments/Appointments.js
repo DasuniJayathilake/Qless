@@ -120,7 +120,9 @@ handleSearchArea = (e) => {
         </table>
 
         <button className='btn btn-success'>
-        <a href={`appointments/add`} style={{textDecoration:'none', color:'white'}}>Add New Appointment</a>
+        <a href={`appointments/add`} style={{textDecoration:'none', color:'white'}}>
+          <i class="fa-regular fa-calendar-plus"></i>&nbsp;Add New
+        </a>
         </button>
 
       </div>
