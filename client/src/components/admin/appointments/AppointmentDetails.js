@@ -5,3 +5,4 @@ export default class details extends Component {
     return <div></div>;
   }
 }
+

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../../../style/Admin/AddNew.css';
+import Navi from '../dashboard/navi';
 
 export default class AddHost extends Component {
 
@@ -59,93 +61,124 @@ export default class AddHost extends Component {
 
   render() {
     return (
-      <div className='col-md-8 mt-4 mx-auto'>
-            <h1 className='h3 mb-3 font-weight-normal'>Add New Host</h1>
 
-            <form className='need-validation' noValidate>
+      <div>
+        <Navi />
+        <div id='main'>
+          <div id='Admin-AddNew'>
+              <div className='container'>
+                  <div className='row login-box'>
 
-              <div className='form-group' style={{marginBottom:'15px'}}>
-                <label style={{marginBottom:'5px'}}>Name</label>
-                <input 
-                type='text'
-                className='form-control'
-                name='name'
-                placeholder='Enter Name'
-                value={this.state.name}
-                onChange={this.handleInputChange}/>
+                      {/* base-login */}
+
+                      <div className='col-sm-5 bg-left align-self-center'>
+                        <button className='btn btn-back'><i class="fa-solid fa-left"></i></button>
+                          <div className='info'>
+                            <div id='user'>Add New Host</div>
+                            <i class="fa-solid fa-user-plus img-icon"></i>
+                            <br/>
+                            <a href={'/hosts'} className="btn btn-back"><i class="fa-solid fa-angles-left"></i>&nbsp;Back</a>
+                          </div>
+                      </div>
+
+                      {/* base-login */}
+
+                      {/* login */}
+
+                      <div className='col-sm-7 bg-color align-self-center'>
+                          <div className='form-section'>
+                            <div className='title'>
+                                <h3>Host Details</h3>
+                            </div>
+
+                            <div className='login-inner-form'>
+
+                              <form className='need-validation' noValidate>
+
+                                <div className='form-group form-box'>
+                                  <input 
+                                  type='text'
+                                  className='form-control input-text'
+                                  name='name'
+                                  placeholder='Name'
+                                  value={this.state.name}
+                                  onChange={this.handleInputChange}/>
+                                  <i className='icon user'></i>
+                                </div>
+
+                                <div className='form-group form-box'>
+                                <input
+                                  className='form-control input-text'
+                                  list='datalistOptions'
+                                  name='department'
+                                  placeholder='Department'
+                                  value={this.state.department}
+                                  onChange={this.handleInputChange}/>
+                                  <datalist id="datalistOptions">
+                                    <option value="Department 01"/>
+                                    <option value="Department 02"/>
+                                    <option value="Department 03"/>
+                                    <option value="Department 04"/>
+                                    <option value="Department 05"/>
+                                  </datalist>
+                                  <i className='icon user'></i>
+                                </div>
+
+                                <div className='form-group form-box'>
+                                  <input 
+                                  type='text'
+                                  className='form-control input-text'
+                                  name='contact'
+                                  placeholder='Contact No.'
+                                  value={this.state.contact}
+                                  onChange={this.handleInputChange}/>
+                                  <i className='icon contact'></i>
+                                </div>
+
+                                <div className='form-group form-box' >
+                                  <input 
+                                  type='email'
+                                  className='form-control input-text'
+                                  name='email'
+                                  placeholder='Email Address'
+                                  value={this.state.email}
+                                  onChange={this.handleInputChange}/>
+                                  <i className='icon email'></i>
+                                </div>
+
+                                <div className='form-group form-box' >
+                                  <input 
+                                  type='text'
+                                  className='form-control input-text'
+                                  name='nic'
+                                  placeholder='NIC No.'
+                                  value={this.state.nic}
+                                  onChange={this.handleInputChange}/>
+                                  <i className='icon nic'></i>
+                                </div>
+
+                                <div className='form-group'>
+                                  <button className='btn primary-btn' type='submit' onClick={this.onSubmit}>
+                                    <i className='far fa-check-square'></i>
+                                    &nbsp; Save
+                                  </button>
+                                </div>
+
+                              </form>
+                            </div>
+
+                          </div>
+                      </div>
+
+                      {/* login */}
+
+
+                  </div>
               </div>
-              
-              {/* <div className='form-group' style={{marginBottom:'15px'}}>
-                <label style={{marginBottom:'5px'}}>Department</label>
-                <input 
-                type='text'
-                className='form-control'
-                name='department'
-                placeholder='Enter Department'
-                value={this.state.department}
-                onChange={this.handleInputChange}/>
-              </div> */}
-
-              <div className='form-group' style={{marginBottom:'15px'}}>
-                <label for="exampleDataList" class="form-label">Department</label>
-                <input
-                className='form-control'
-                list='datalistOptions'
-                name='department'
-                placeholder='Choose the Department'
-                value={this.state.department}
-                onChange={this.handleInputChange}/>
-                <datalist id="datalistOptions">
-                  <option value="Department 01"/>
-                  <option value="Department 02"/>
-                  <option value="Department 03"/>
-                  <option value="Department 04"/>
-                  <option value="Department 05"/>
-                </datalist>
-                  
-              </div>
-
-
-              <div className='form-group' style={{marginBottom:'15px'}}>
-                <label style={{marginBottom:'5px'}}>Contact No.</label>
-                <input 
-                type='text'
-                className='form-control'
-                name='contact'
-                placeholder='Enter Contact No.'
-                value={this.state.contact}
-                onChange={this.handleInputChange}/>
-              </div>
-
-              <div className='form-group' style={{marginBottom:'15px'}}>
-                <label style={{marginBottom:'5px'}}>Email Address</label>
-                <input 
-                type='text'
-                className='form-control'
-                name='email'
-                placeholder='Enter Email Address'
-                value={this.state.email}
-                onChange={this.handleInputChange}/>
-              </div>
-
-              <div className='form-group' style={{marginBottom:'15px'}}>
-                <label style={{marginBottom:'5px'}}>NIC No.</label>
-                <input 
-                type='text'
-                className='form-control'
-                name='nic'
-                placeholder='Enter NIC No.'
-                value={this.state.nic}
-                onChange={this.handleInputChange}/>
-              </div>
-
-              <button className='btn btn-success' type='submit' style={{marginTop:'15px'}} onClick={this.onSubmit}>
-                <i className='far fa-check-square'></i>
-                &nbsp; Save
-              </button>
-
-            </form>
+          </div>
         </div>
+      </div>
+
     );
   }
 }

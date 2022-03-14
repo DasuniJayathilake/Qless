@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navi from '../dashboard/navi';
 import '../dashboard/Dashboard.css';
 
+
 export default class Visitors extends Component {
 constructor(props){
   super(props);
@@ -18,6 +19,7 @@ componentDidMount(){
 
 retrieveVisitors(){
   axios.get("/visitors").then(res => {
+    
     if(res.data.success){
       this.setState({
         visitors:res.data.existingVisitors
