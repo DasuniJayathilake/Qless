@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import SideNav from '../../imports/SideNav/SideNav';
 import './Dashboard.css';
-import './navi';
-import Navi from './navi';
+import '../navigation/navi';
+import Navi from '../navigation/navi';
 
 
 export default class dashboard extends Component {

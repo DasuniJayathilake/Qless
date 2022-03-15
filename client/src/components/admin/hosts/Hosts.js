@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Navi from '../dashboard/navi';
+import Navi from '../navigation/navi';
 
 export default class Hosts extends Component {
 constructor(props){

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'; 
-import Navi from '../dashboard/navi';
+import Navi from '../navigation/navi';
 import '../../../style/Admin/AddNew.css';
 // import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";

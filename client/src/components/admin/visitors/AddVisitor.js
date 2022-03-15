@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../../../style/Admin/AddNew.css';
-import Navi from '../dashboard/navi';
+import Navi from '../navigation/navi';
 
 
 export default class AddVisitor extends Component {
