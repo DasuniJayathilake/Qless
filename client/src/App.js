@@ -20,6 +20,7 @@ import Profile from './components/visitor/visitorProfile/Profile';
 import EditProfile from './components/visitor/visitorProfile/EditProfile';
 import VisitorAppointments from './components/visitor/visitorAppointments/VisitorAppointments';
 import VisitorAppoinmentHistory from './components/visitor/visitorAppointments/VisitorAppoinmentHistory';
+import Registration from './components/visitor/visitorLogin/Registration';
 // import { useParams } from 'react-router';
 import Menu from './components/Menu';
 
@@ -56,7 +57,7 @@ export default function App() {
 
         {/* Visitor module - login page */}
         <Route path="visitor/login/" element={<Login />}></Route>
-        <Route path="visitor/register/" element={<Register />}></Route>
+        <Route path="visitor/register/" element={<Registration />}></Route>
         {/* <Route path="visitor/register/other" element={<OtherInfo />}></Route> */}
 
         {/* visitor module - home page */}

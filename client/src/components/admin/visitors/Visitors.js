@@ -43,10 +43,10 @@ onDelete = (id) =>{
 filterData(visitors, searchKey){
 
   const result = visitors.filter((visitors) => 
-    visitors.Name.toLowerCase().includes(searchKey) ||
-    visitors.ContactNo.toLowerCase().includes(searchKey) ||
-    visitors.Email.toLowerCase().includes(searchKey) ||
-    visitors.NIC.toLowerCase().includes(searchKey) 
+    visitors.name.toLowerCase().includes(searchKey) ||
+    visitors.contact.toLowerCase().includes(searchKey) ||
+    visitors.email.toLowerCase().includes(searchKey) ||
+    visitors.nic.toLowerCase().includes(searchKey) 
   )
   
 
@@ -118,10 +118,10 @@ handleSearchArea = (e) => {
                       {/* <td>
                         <a href={`visitors/details/{details._id}`} style={{textDecoration:'none', color:'white', fontWeight:'bold'}}>{visitors.Name}</a>
                       </td> */}
-                      <td>{visitors.Name}</td>
-                      <td>{visitors.ContactNo}</td>
-                      <td className='email-text'>{visitors.Email}</td>
-                      <td>{visitors.NIC}</td>
+                      <td>{visitors.name}</td>
+                      <td>{visitors.contact}</td>
+                      <td className='email-text'>{visitors.email}</td>
+                      <td>{visitors.nic}</td>
                       <td>
                         <a className="btn btn-primary btn-action" href={`visitors/details/{details._id}`}>
                           <i class="fa-regular fa-eye"></i>

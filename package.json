@@ -19,5 +19,10 @@
     "express": "^4.17.2",
     "mongoose": "^6.1.7",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "jsonwebtoken": "^8.5.1"
   }
 }

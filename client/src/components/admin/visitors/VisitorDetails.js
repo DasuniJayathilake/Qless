@@ -20,10 +20,10 @@ export default class VisitorDetails extends Component {
       if(res.data.success){
         this.setState({
           visitors: res.data.details, 
-          Name: res.data.visitors.Name,
-          ContactNo: res.data.visitors.ContactNo,
-          Email: res.data.visitors.Email,
-          NIC: res.data.visitors.NIC
+          Name: res.data.visitors.name,
+          ContactNo: res.data.visitors.contact,
+          Email: res.data.visitors.email,
+          NIC: res.data.visitors.nic
         });
 
         console.log(this.state.details);

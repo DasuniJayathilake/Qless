@@ -32,10 +32,10 @@ export default class AddVisitor extends Component {
     const {name, contact, email, nic} = this.state;
 
     const data = {
-      Name: name,
-      ContactNo: contact,
-      Email: email,
-      NIC: nic
+      name: name,
+      contact: contact,
+      email: email,
+      nic: nic
     }
 
     console.log(data);
@@ -45,10 +45,10 @@ export default class AddVisitor extends Component {
         alert("New Visitor Added Successfully");
         this.setState(
           {
-            Name:"",
-            ContactNo:"",
-            Email:"",
-            NIC:""
+            name:"",
+            contact:"",
+            email:"",
+            nic:""
           }
         )
       }

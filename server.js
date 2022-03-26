@@ -3,14 +3,20 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+require('dotenv').config({path:"./config.env"})
+
 //create express instance
 const app = express();
-// app.use(express.json())
+app.use(express.json())
+
+//routers
+
 
 //import routes
 const visitorsRoutes = require('./routes/visitors');
 const hostsRoutes = require('./routes/hosts');
 const appointmentsRoutes = require('./routes/appointments');
+const routerRoutes = require('./routes/router');
 
 //app middleware
 app.use(bodyParser.json());
@@ -20,9 +26,10 @@ app.use(cors());
 app.use(visitorsRoutes);
 app.use(hostsRoutes);
 app.use(appointmentsRoutes)
+app.use(routerRoutes);
 
 
-const PORT = 8000;
+const PORT = process.env.PORT||8080;
 const DB_URL = 'mongodb+srv://DasuniRJ:DRJ970403@vms.g11f9.mongodb.net/qless_vms?retryWrites=true&w=majority';
 
 mongoose.connect(DB_URL, {
@@ -34,7 +41,7 @@ mongoose.connect(DB_URL, {
 })
 .catch((err) => console.log('DB connection error', err));
 
-
 app.listen(PORT, () => {
     console.log(`App is running on ${PORT}`);
 });
+

@@ -1,25 +1,27 @@
-
 const mongoose = require('mongoose');
 
 const { stringify } = require('querystring');
 
 const visitorsSchema = new mongoose.Schema({
-    Name:{
+    name:{
         type: String,
         required: true
     },
-    ContactNo:{
+    contact:{
         type: String,
         required: true
     },
-    Email:{
+    email:{
         type: String,
         required: true
     },
-    NIC:{
+    nic:{
         type: String,
         required: true
+    },
+    password:{
+        type: String
     }
 });
 
-module.exports = mongoose.model('visitors', visitorsSchema);
+module.exports= Visitor = mongoose.model('visitors', visitorsSchema);
