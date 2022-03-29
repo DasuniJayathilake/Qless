@@ -71,6 +71,13 @@ header .navbar a{
   text-decoration: none;
 }
 
+header .navbar .fas{
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color:#666;
+  text-decoration: none;
+}
+
 header .navbar a:hover{
   color:var(--red);
 }

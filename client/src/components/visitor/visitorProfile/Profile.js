@@ -1,10 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 import '../../../style/visitorProfile/Profile.css';
 import Navigation from '../VisitorNavigation/Navigation';
 import Footer from '../visitorFooter/Footer';
 import profile from '../../../assets/profile.jpg';
+import { useSelector } from 'react-redux';
 
 export default function Profile() {
+
+    // const user = useSelector(state => state.isLoggedIn)
+    // const navigate = useNavigate()
+
+    // const route = () => {
+    //     const token = localStorage.getItem('x-access-token')
+    //     return token ? true : false
+    // }
+    
+    // useEffect(() => {
+    //     if(!route){
+    //         navigate('/visitor/login')
+    //     }
+    // },[route, navigate])
+
+    // console.log(user)
+
   return (
     <div>
         <Navigation />

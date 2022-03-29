@@ -1,12 +1,56 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import '../../../style/visitorLogin/login.css';
-import img from '../../../assets/loginImg.jpg';
 import logo from '../../../assets/logo.png'
 
-console.log(img);
+import { useDispatch, useStore } from 'react-redux';
+import { loginAction } from '../../../container/actions';
 
 export default function Login() {
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [errorMessage, setError] = useState("");
+
+
+    const dispatch = useDispatch()
+    const store = useStore()
+    const navigate = useNavigate();
+
+    //on form submit click handler
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const visitorCredentials = {
+            email,
+            password
+        }
+
+        // const visitordata = {
+        //     email: "das@gmail.com",
+        //     password: "123456789"
+        // }
+
+        const visitordata = {
+            email: email,
+            password: password
+        }
+
+        const login = dispatch(loginAction(visitordata))
+        login 
+            .then(data => navigate('/visitor/home'))
+            // .then(data => console.log(store.getState()))
+            .catch(error => {
+                setError(error.err)
+                alert(error.err)
+            })
+    }
+
+    let defaultClass = "nav-link link-btn btn-primary default-bg";
+    let active = " active";
+
+
   return (
     <div id='login'>
         <div className='container'>
@@ -23,8 +67,8 @@ export default function Login() {
                             {/* <button href={'/visitor/import/loginform'} className='nav-link link-btn btn-primary default-bg'>Login</button>
                             <button href={'/visitor/import/registerform'} className='nav-link link-btn btn-primary default-bg'>Register</button> */}
 
-                            <a href={'/visitor/login'} className='nav-link link-btn btn-primary default-bg'><span>Login</span></a>
-                            <a href={'/visitor/register'} className='nav-link link-btn btn-primary default-bg'><span>Register</span></a>
+                            <a href={'/visitor/login'} className={defaultClass + active}><span>Login</span></a>
+                            <a href={'/visitor/register'} className={defaultClass}><span>Register</span></a>
                         </div>
                     </div>
                 </div>
@@ -35,19 +79,31 @@ export default function Login() {
 
                 <div className='col-sm-7 bg-color align-self-center'>
                     <div className='form-section'>
-                        <div className='title'>
+                        <div className='title-login'>
                             <h3>Sign into your account</h3>
                         </div>
                         <div className='login-inner-form'>
-                            <form method='POST'>
+                            <form method='POST' onSubmit={handleSubmit}>
                                 
                                 <div className='form-group form-box'>
-                                    <input type="text" id="email" className='input-text' placeholder='Email Address'/>
+                                    <input 
+                                    type="text" 
+                                    id="email"
+                                    onChange={e=>setEmail(e.target.value)} 
+                                    className='input-text' 
+                                    placeholder='Email Address'
+                                    />
                                     <i className='icon email'></i>
                                 </div>
 
                                 <div className='form-group form-box'>
-                                    <input type="text" id="password" className='input-text' placeholder='Password'/>
+                                    <input 
+                                    type="text" 
+                                    id="password"
+                                    onChange={e=>setPassword(e.target.value)}
+                                    className='input-text' 
+                                    placeholder='Password'
+                                    />
                                     <i className='icon lock'></i>
                                 </div>
 
