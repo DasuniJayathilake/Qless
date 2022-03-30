@@ -135,7 +135,7 @@ export default function({ formData, setFormData }) {
                                     </div>
 
                                     <div className='form-group'>
-                                        <button className='btn primary-btn'>Save Changes</button>
+                                        <button className='btn primary-btn'>Save</button>
                                     </div>
                                     
                                 </form>

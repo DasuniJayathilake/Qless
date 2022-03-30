@@ -21,6 +21,7 @@
             padding: 0;
             border-radius: 10px 0 0 10px;
             background: #ff214f;
+            background-size: 95%;
             opacity: 1;
         }
 
@@ -28,16 +29,13 @@
             height: 450px;
             position: relative;
 
-            >.profile-img{
-                width: 200px;
-                height: 400px;
+            >.cover-img{
                 align-items: center;
-                padding: 0 50px;
 
                 >img{
-                    width: 300px;
-                    height: 380px;
-                    border-radius: 8px;
+                    padding-top: 20px;
+                    width: 380px;
+                    // height: 380px;
                 }
             }
 

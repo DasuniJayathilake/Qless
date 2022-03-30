@@ -30,6 +30,7 @@
   padding: 0;
   border-radius: 10px 0 0 10px;
   background: #ff214f;
+  background-size: 95%;
   opacity: 1;
 }
 
@@ -38,19 +39,15 @@
   position: relative;
 }
 
-#visitorAppointments .login-box .info > .profile-img {
-  width: 200px;
-  height: 400px;
+#visitorAppointments .login-box .info > .cover-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
 }
 
-#visitorAppointments .login-box .info > .profile-img > img {
-  width: 300px;
-  height: 380px;
-  border-radius: 8px;
+#visitorAppointments .login-box .info > .cover-img > img {
+  padding-top: 20px;
+  width: 380px;
 }
 
 #visitorAppointments .login-box .info > #user {

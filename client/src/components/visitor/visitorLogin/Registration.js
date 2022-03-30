@@ -54,6 +54,7 @@ export default function Registration() {
         }
         
         const validate = dispatch(registerAction(visitor));
+
         validate
             .then(data => {
                 // console.log(data)
