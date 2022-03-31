@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+:root{
+    --red: #ff214f;
+}
+
+
+.hostschedule {
+	/* background-image: linear-gradient(45deg, #7175da, #9790F2); */
+	/* font-family: 'Muli', sans-serif; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* min-height: 100vh; */
+	margin: 0;
+}
+
+/* .courses-container {
+	
+} */
+
+.host {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 25px;
+	overflow: hidden;
+	width: 525px;
+}
+
+.host:hover {
+	transform: scale(1.01);
+}
+
+.host h6 {
+	opacity: 0.6;
+    margin: 7px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.host h2 {
+	letter-spacing: 1px;
+	margin: 7px 0;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.host h5 {
+	letter-spacing: 1px;
+	margin: 5px 0;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.host-preview {
+	background-color: var(--red);
+	color: #fff;
+	padding: 12px;
+	/* max-width: 250px; */
+    width: 200px;
+}
+
+.host-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+.host-info {
+    margin: 10px;
+	padding: 0px 10px;
+	position: relative;
+	width: 100%;
+    /* text-align: left; */
+}
+
+.ap-detils{
+    margin-top: 12px;
+    font-size: smaller;
+}
+
+.btn-host {
+	/* background-color: #c82f63; */
+    background-color: var(--red);
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 15px;
+	padding: 5px 10px;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	letter-spacing: 1px;
+}
+
+.btn-host:hover{
+    /* background-color: ; */
+    color: wheat;
+    transform: scale(1.1);
+}
+
+.al-left{
+    align-items: left;
+    margin-right: 50px;
+    padding-right: 50px;
+}
+
+.btn-day {
+	border: 1px solid;
+    border-color: #ff214f;
+	border-radius: 50px;
+	color: black;
+	font-size: smaller;
+	padding: 4px 6px;
+	position: absolute;
+	letter-spacing: 1px;
+    margin: 0;
+}
+
+.time{
+    /* margin-top: 5000px; */
+    padding-top: 8px;
+}

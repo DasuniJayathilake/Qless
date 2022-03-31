@@ -21,6 +21,7 @@ import EditProfile from './components/visitor/visitorProfile/EditProfile';
 import VisitorAppointments from './components/visitor/visitorAppointments/VisitorAppointments';
 import VisitorAppoinmentHistory from './components/visitor/visitorAppointments/VisitorAppoinmentHistory';
 import Registration from './components/visitor/visitorLogin/Registration';
+import HostSchedule from './components/visitor/visitorAppointments/HostSchedule';
 // import { useParams } from 'react-router';
 import Menu from './components/Menu';
 
@@ -73,6 +74,7 @@ export default function App() {
         {/* visitor module - appointments */}
         <Route path="visitor/appointments" element={<VisitorAppointments />}></Route>
         <Route path="visitor/appointmentHistory" element={<VisitorAppoinmentHistory />}></Route>
+        <Route path="visitor/hostSchedule" element={<HostSchedule />}></Route>
 
       </Routes>
     </div>

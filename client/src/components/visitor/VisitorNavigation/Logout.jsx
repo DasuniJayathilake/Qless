@@ -5,7 +5,7 @@ export default function Logout(props) {
   return (
     <div>
         <Link to="/" onClick={props.onLogout} className="nav-link">
-            Logout 
+          <i class="fa-solid fa-power-off"></i>
         </Link>
     </div>
   )
