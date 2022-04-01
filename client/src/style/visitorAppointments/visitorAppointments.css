@@ -39,6 +39,25 @@
   position: relative;
 }
 
+#visitorAppointments .login-box .info > .searchbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#visitorAppointments .login-box .info > .searchbar > .searchbar {
+  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 250px;
+  border-radius: 20px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-transform: capitalize;
+}
+
 #visitorAppointments .login-box .info > .cover-img {
   -webkit-box-align: center;
       -ms-flex-align: center;

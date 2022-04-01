@@ -312,10 +312,25 @@ tr:hover{
   box-shadow: #272c4a;
 }
 
+
 .detail-table th{
   background-color: #1b203d;
   border-radius: 3px;
+  border-bottom: none;
 }
 
+.detail-table{
+  min-width: max-content;
+}
 
+.detail-table th{
+  position: sticky;
+  top: 0;
+} 
 
+.table-wrapper{
+  max-height: 318px;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}

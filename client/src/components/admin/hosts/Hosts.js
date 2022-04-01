@@ -94,46 +94,48 @@ handleSearchArea = (e) => {
             <div className='dash-content-box'>
               <p>All Host Details</p>
 
-              <table className="table detail-table" style={{marginTop:'40px'}}>
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Department</th>
-                    <th scope="col">Contact No.</th>
-                    <th scope="col">Email Address</th>
-                    <th scope="col">NIC No.</th>
-                    {/* <th scope="col">Status</th> */}
-                    <th scope="col">Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {this.state.hosts.map((hosts, index) => (
-                    <tr key={index}>
-                      <th scope="row">{index+1}</th>
-                        <td>{hosts.Name}</td>
-                        <td>{hosts.Department}</td>
-                        <td>{hosts.ContactNo}</td>
-                        <td className='email-text'>{hosts.Email}</td>
-                        <td>{hosts.NIC}</td>
-                        <td>
-                          <a className="btn btn-primary btn-action" href={`hosts/details/{details._id}`}>
-                            <i class="fa-regular fa-eye"></i>
-                          </a>
-                          &nbsp;
-                          <a className="btn btn-warning btn-action" href={`hosts/edit/${hosts._id}`} onClick={() => this.onDelete(hosts._id)}>
-                            <i className="fas fa-edit"></i>
-                          </a>
-                          &nbsp;
-                          <a className="btn btn-danger btn-action" href="#" onClick={() => this.onDelete(hosts._id)}>
-                            <i className="far fa-trash-alt"></i>
-                          </a>
-                        </td>
+              <div className='table-wrapper'>
+                <table className="table detail-table" style={{marginTop:'40px'}}>
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Department</th>
+                      <th scope="col">Contact No.</th>
+                      <th scope="col">Email Address</th>
+                      <th scope="col">NIC No.</th>
+                      {/* <th scope="col">Status</th> */}
+                      <th scope="col">Actions</th>
                     </tr>
-                    ))
-                  }
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {this.state.hosts.map((hosts, index) => (
+                      <tr key={index}>
+                        <th scope="row">{index+1}</th>
+                          <td>{hosts.Name}</td>
+                          <td>{hosts.Department}</td>
+                          <td>{hosts.ContactNo}</td>
+                          <td className='email-text'>{hosts.Email}</td>
+                          <td>{hosts.NIC}</td>
+                          <td>
+                            <a className="btn btn-primary btn-action" href={`hosts/details/{details._id}`}>
+                              <i class="fa-regular fa-eye"></i>
+                            </a>
+                            &nbsp;
+                            <a className="btn btn-warning btn-action" href={`hosts/edit/${hosts._id}`} onClick={() => this.onDelete(hosts._id)}>
+                              <i className="fas fa-edit"></i>
+                            </a>
+                            &nbsp;
+                            <a className="btn btn-danger btn-action" href="#" onClick={() => this.onDelete(hosts._id)}>
+                              <i className="far fa-trash-alt"></i>
+                            </a>
+                          </td>
+                      </tr>
+                      ))
+                    }
+                  </tbody>
+                </table>
+              </div>
 
               <button className='btn btn-add-new'>
               <a href={`hosts/add`} >

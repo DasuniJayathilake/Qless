@@ -29,6 +29,24 @@
             height: 450px;
             position: relative;
 
+            >.searchbar{
+                align-items: center;
+                // top: 450px;
+
+                >.searchbar{
+                    margin-left: 70px;
+                    margin-top: 60px;
+                    margin-bottom: 30px;
+                    width: 250px;
+                    border-radius: 20px;
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-decoration: inherit;
+                    text-transform: capitalize;
+                }
+            }
+
             >.cover-img{
                 align-items: center;
 

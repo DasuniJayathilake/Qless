@@ -8,10 +8,10 @@ export default function () {
             {/* <p class="logo">logo here</p> */}
             <img id='logo' src={logo}/>
             <a href={'/dashboard'} class="icon-a"><i class="fa fa-dashboard icons"></i>   Dashboard</a>
+            <a href={'/appointments'} class="icon-a"><i class="fa-solid fa-list-check"></i>  Appointments</a>
             <a href={'/visitors'} class="icon-a"><i class="fa fa-users icons"></i>   Visitors</a>
             <a href={'/hosts'} class="icon-a"><i class="fa-solid fa-user"></i>   Hosts</a>
             <a href={'/dashboard'} class="icon-a"><i class="fa-solid fa-calendar-days"></i> Host Schedule</a>
-            <a href={'/appointments'} class="icon-a"><i class="fa-solid fa-list-check"></i>  Appointments</a>
             <a href={'/dashboard'} class="icon-a"><i class="fa-solid fa-user-gear"></i>   Manage Profile</a>
             <a href={'/dashboard'}class="icon-a"><i class="fa-solid fa-power-off"></i>   Logout</a>
         </div> 

@@ -92,45 +92,48 @@ handleSearchArea = (e) => {
           <div className='dash-box-details'>
             <div className='dash-content-box'>
               <p>All Appointments Details</p>
-              <table className="table detail-table" style={{marginTop:'40px'}}>
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Visitor Name</th>
-                    <th scope="col">Host Name</th>
-                    <th scope="col">Purpose</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {this.state.appointments.map((appointments, index) => (
-                    <tr key={index}>
-                      <th scope="row">{index+1}</th>
-                      <td>{appointments.VisitorName}</td>
-                      <td>{appointments.HostName}</td>
-                      <td>{appointments.Purpose}</td>
-                      <td>{appointments.Date}</td>
-                      <td>{appointments.Time}</td>
-                      <td>
-                        <a className="btn btn-primary btn-action" href={`appointments/details/{details._id}`}>
-                          <i class="fa-regular fa-eye"></i>
-                        </a>
-                        &nbsp;
-                        <a className="btn btn-warning btn-action" href={`appointments/edit/${appointments._id}`} onClick={() => this.onDelete(appointments._id)}>
-                          <i className="fas fa-edit"></i>
-                        </a>
-                        &nbsp;
-                        <a className="btn btn-danger btn-action" href="#" onClick={() => this.onDelete(appointments._id)}>
-                          <i className="far fa-trash-alt"></i>
-                        </a>
-                      </td>
+
+              <div className='table-wrapper'>
+                <table className="table detail-table" style={{marginTop:'40px'}}>
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Visitor Name</th>
+                      <th scope="col">Host Name</th>
+                      <th scope="col">Purpose</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Actions</th>
                     </tr>
-                    ))
-                  }
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {this.state.appointments.map((appointments, index) => (
+                      <tr key={index}>
+                        <th scope="row">{index+1}</th>
+                        <td>{appointments.VisitorName}</td>
+                        <td>{appointments.HostName}</td>
+                        <td>{appointments.Purpose}</td>
+                        <td>{appointments.Date}</td>
+                        <td>{appointments.Time}</td>
+                        <td>
+                          <a className="btn btn-primary btn-action" href={`appointments/details/{details._id}`}>
+                            <i class="fa-regular fa-eye"></i>
+                          </a>
+                          &nbsp;
+                          <a className="btn btn-warning btn-action" href={`appointments/edit/${appointments._id}`} onClick={() => this.onDelete(appointments._id)}>
+                            <i className="fas fa-edit"></i>
+                          </a>
+                          &nbsp;
+                          <a className="btn btn-danger btn-action" href="#" onClick={() => this.onDelete(appointments._id)}>
+                            <i className="far fa-trash-alt"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      ))
+                    }
+                  </tbody>
+                </table>
+              </div>
 
               <button className='btn btn-add-new'>
               <a href={`appointments/add`} >
