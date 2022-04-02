@@ -1,10 +1,14 @@
 import React from 'react';
 import './style/App.css'
 import { Route, Routes } from 'react-router-dom';
+// import { useParams } from 'react-router';
 
+// exact path import
+import Menu from './components/Menu';
+
+// admin module imports
 import AddVisitor from './components/admin/visitors/AddVisitor';
 import EditVisitor from './components/admin/visitors/EditVisitor';
-// import Navbar from './components/admin/Navbar';
 import VisitorDetails from './components/admin/visitors/VisitorDetails';
 import Visitors from './components/admin/visitors/Visitors';
 import DashBoard from './components/admin/dashboard/DashBoard';
@@ -12,6 +16,8 @@ import Hosts from './components/admin/hosts/Hosts';
 import AddHost from './components/admin/hosts/AddHost';
 import Appointments from './components/admin/appointments/Appointments';
 import AddAppointment from './components/admin/appointments/AddAppointment';
+
+// visitor module imports
 import Login from './components/visitor/visitorLogin/Login';
 import Register from './components/visitor/visitorLogin/Register';
 import Home from './components/visitor/visitorHome/Home';
@@ -22,8 +28,11 @@ import VisitorAppointments from './components/visitor/visitorAppointments/Visito
 import VisitorAppoinmentHistory from './components/visitor/visitorAppointments/VisitorAppoinmentHistory';
 import Registration from './components/visitor/visitorLogin/Registration';
 import HostSchedule from './components/visitor/visitorAppointments/HostSchedule';
-// import { useParams } from 'react-router';
-import Menu from './components/Menu';
+
+// Host module imports
+import HostDashboard from './components/host/dashboard/HostDashboard';
+import HostVisitors from './components/host/visitors/HostVisitors';
+import HostAppointments from './components/host/hostAppointments/HostAppointments';
 
 export default function App() {
   return (
@@ -34,6 +43,9 @@ export default function App() {
       <Routes>
 
         <Route exact path="/" element={<Menu />}></Route>
+
+
+        {/* **************************** Admin module routes ************************** */}
 
         {/* Admin module - dashboard */}
         <Route path="dashboard/" element={<DashBoard />}></Route>
@@ -56,6 +68,10 @@ export default function App() {
         {/* <Route path="visitors/edit/:id" element={<EditVisitor />}></Route>
         <Route path="visitors/details/:id" element={<VisitorDetails />}></Route> */}
 
+
+
+        {/* **************************** Visitor module routes ************************** */}
+
         {/* Visitor module - login page */}
         <Route path="visitor/login/" element={<Login />}></Route>
         <Route path="visitor/register/" element={<Registration />}></Route>
@@ -75,6 +91,14 @@ export default function App() {
         <Route path="visitor/appointments" element={<VisitorAppointments />}></Route>
         <Route path="visitor/appointmentHistory" element={<VisitorAppoinmentHistory />}></Route>
         <Route path="visitor/hostSchedule" element={<HostSchedule />}></Route>
+
+
+        {/* **************************** Host module routes ************************** */}
+
+        {/* Admin module - dashboard */}
+        <Route path="host/dashboard/" element={<HostDashboard />}></Route>
+        <Route path="host/hostvisitors/" element={<HostVisitors />}></Route>
+        <Route path="host/hostappointments/" element={<HostAppointments />}></Route>
 
       </Routes>
     </div>
